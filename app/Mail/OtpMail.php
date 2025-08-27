@@ -12,15 +12,16 @@ use Illuminate\Queue\SerializesModels;
 class OtpMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $otp;
+    public $otp,$name;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($otp)
+    public function __construct($otp,$name)
     {
         //
         $this->otp = $otp;
+        $this->name = $name;
     }
 
     /**
@@ -40,7 +41,7 @@ class OtpMail extends Mailable
     {
         return new Content(
             view: 'emails.otp',
-            with: ['otp' => $this->otp],
+            with: ['otp' => $this->otp , 'name' => $this->name],
         );
     }
 

@@ -69,7 +69,7 @@ class HireDeveloper extends Component
         $this->generated_otp = mt_rand(100000, 999999); // Numeric OTP
 
         // Send OTP via email (you can use a Mailable class here)
-        Mail::to($this->company_email)->send(new OtpMail($this->generated_otp));
+        Mail::to($this->company_email)->send(new OtpMail($this->generated_otp,$this->full_name));
         
         // Set OTP sent flag
         $this->otpSent = true;
