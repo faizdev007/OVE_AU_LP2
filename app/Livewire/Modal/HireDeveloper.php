@@ -2,10 +2,13 @@
 
 namespace App\Livewire\Modal;
 
+use App\Jobs\SendQueryEmailJob;
 use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OtpMail;
 use App\Models\ModalData;
+use App\Models\RequestQuery;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
@@ -29,7 +32,7 @@ class HireDeveloper extends Component
 
     // OTP verification rules
     protected $otpRules = [
-        'otp' => 'required|numeric|digits:10',
+        'otp' => 'required|numeric|digits:6',
     ];
 
     public function render()
@@ -38,7 +41,7 @@ class HireDeveloper extends Component
     }
 
     // Method to move to next step
-    public function nextStep()
+    public function nextStep(Request $request)
     {
         $this->validate([
             'full_name' => 'required|string|max:255',
@@ -51,8 +54,16 @@ class HireDeveloper extends Component
                 }
             }],
             'phone' => 'required|string|min:7|max:15',
+        ]);
 
 
+        RequestQuery::create([
+            'name'=>$this->full_name,
+            'email'=>$this->company_email,
+            'phone'=>$this->phone,
+            'project_brief'=>'N/A',
+            'lp_url'=>$request->headers->get('referer'),
+            'ip_address'=>$request->ip(),
         ]);
 
         // Generate OTP and send via email if in the first step
@@ -81,7 +92,7 @@ class HireDeveloper extends Component
     }
 
     // Method to verify OTP in second step
-    public function verifyOtp()
+    public function verifyOtp(Request $request)
     {
         $this->validate($this->otpRules);
 
@@ -89,7 +100,15 @@ class HireDeveloper extends Component
         if ($this->otp == $this->generated_otp) {
             session()->flash('message', 'OTP verified successfully!');
             // Proceed to form submission or final step
-            $this->submitForm();
+            $query = RequestQuery::where([
+                'email'=>$this->company_email,
+                'phone'=>$this->phone,
+                'project_brief'=>'N/A',
+                'lp_url'=>$request->headers->get('referer'),
+                'ip_address'=>$request->ip(),
+            ])->first();
+
+            $this->submitForm($query);
         } else {
             session()->flash('error', 'Invalid OTP. Please try again.');
         }
@@ -107,18 +126,17 @@ class HireDeveloper extends Component
     }
 
     // Method to submit the final form
-    private function submitForm()
+    private function submitForm($query)
     {
-        dd($this);
-        // Handle form submission logic, like saving the data to DB
-        // Example:
-        // Developer::create([
-        //     'full_name' => $this->full_name,
-        //     'email' => $this->company_email,
-        //     'phone' => $this->phone,
-        // ]);
+        // Dispatch email job
+        SendQueryEmailJob::dispatch($query);
 
-        session()->flash('message', 'Form submitted successfully!');
+        $this->reset(['name', 'email', 'phone', 'project_brief']);
+        
+        session()->flash('allow_success', true);
+        
+        // $this->successMessage = 'Thank You!';
+        return redirect()->route('thankyou');
     }
 
     public function mount()

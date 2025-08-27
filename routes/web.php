@@ -18,6 +18,10 @@ Route::get('/run-queue', function () {
     return 'Queue processed.';
 });
 
+Route::get('/opt',function(){
+    return view('emails.otp');
+});
+
 Route::get('/', function () {
     return view('landing_pages.bacancy',[
         'lp_theme'=>'bacancy',

@@ -28,11 +28,11 @@ class SendQueryEmailJob implements ShouldQueue
     {
         //
         $recipients = [
-                        // 'faizdev007@gmail.com', 
-                        'ronnie@optimalvirtualemployee.com', 
-                        'dshah@optimalvirtualemployee.com', 
-                        'nakul@optimalvirtualemployee.com', 
-                        'kartik@optimalvirtualemployee.com'
+                        'faizdev007@gmail.com', 
+                        // 'ronnie@optimalvirtualemployee.com', 
+                        // 'dshah@optimalvirtualemployee.com', 
+                        // 'nakul@optimalvirtualemployee.com', 
+                        // 'kartik@optimalvirtualemployee.com'
                     ];
 
         Mail::to($recipients)->send(new SendQueryMail($this->data));
