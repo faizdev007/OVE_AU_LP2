@@ -1,0 +1,71 @@
+# name: FTP Deploy
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   ftp-deploy:
+#     name: Upload files via FTP
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: 🧾 Checkout code
+#         uses: actions/checkout@v3
+
+#       - name: 🧩 Set up PHP
+#         uses: shivammathur/setup-php@v2
+#         with:
+#           php-version: 8.2
+#           extensions: mbstring, intl, zip, fileinfo, curl
+#           tools: composer:v2
+
+#       - name: 🛠️ Create temporary .env file for build
+#         run: |
+#           echo "APP_NAME=Laravel" > .env
+#           echo "APP_ENV=local" >> .env
+#           echo "APP_URL=http://localhost" >> .env
+#           echo "APP_KEY=base64:dummyKeyForBuildOnlyDontUseInProd==" >> .env
+#           echo "APP_DEBUG=false" >> .env
+#           echo "LOG_CHANNEL=stack" >> .env
+
+#       - name: 📦 Install Composer Dependencies
+#         run: composer install --no-dev --optimize-autoloader
+
+#       - name: 📁 Prepare deploy folder with only needed files
+#         run: |
+#           # Create the parent directories
+#           mkdir -p deploy-folder/public/build deploy-folder/public/assets deploy-folder/resources deploy-folder/app deploy-folder/routes
+
+#           # Copy the contents of each directory to the deploy-folder
+#           cp -r public/assets/* deploy-folder/public/assets/
+#           cp -r public/build/* deploy-folder/public/build/
+#           cp -r resources/* deploy-folder/resources/
+#           cp -r app/* deploy-folder/app/
+#           cp -r routes/* deploy-folder/routes/
+
+#           # Copy robots.txt from root and public
+#           cp robots.txt deploy-folder/ || true
+#           cp public/robots.txt deploy-folder/public/ || true
+
+#       - name: 📂 FTP Deploy
+#         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#         with:
+#           server: ${{ secrets.FTP_SERVER }}
+#           username: ${{ secrets.FTP_USERNAME }}
+#           password: ${{ secrets.FTP_PASSWORD }}
+#           local-dir: ./deploy-folder/
+#           server-dir: /public_html/
+#           exclude: |
+#             .git*
+#             .github*
+#             node_modules*
+#             vendor*
+#             tests*
+#             .env
+#             .gitattributes
+#             .gitignore
+            
+#       - name: 🧹 Cleanup
+#         run: rm -f .env

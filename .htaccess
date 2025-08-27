@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ===========================================================
+    # 1️⃣ FORCE HTTPS
+    # ===========================================================
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # <IfModule mod_negotiation.c>
+    #     Options -MultiViews -Indexes
+    # </IfModule>
+    
+    # <IfModule mod_headers.c>
+    #     Header always append X-Frame-Options SAMEORIGIN
+    #     Header set X-Content-Type-Options nosniff
+    #     Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    #     Header set Referrer-Policy "strict-origin-when-cross-origin"
+    #     Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    # </IfModule>
+
+    # ===========================================================
+    # 2️⃣ HANDLE AUTHORIZATION HEADER
+    # ===========================================================
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # ===========================================================
+    # 3️⃣ REDIRECT TRAILING SLASHES IF NOT A FOLDER
+    # ===========================================================
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # ===========================================================
+    # 4️⃣ SEND REQUESTS TO FRONT CONTROLLER (index.php)
+    # ===========================================================
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,33 @@
+{
+  "public/assets/bacancy/talktoexpertbg.webp": {
+    "file": "assets/talktoexpertbg-pE2cEsLu.webp",
+    "src": "public/assets/bacancy/talktoexpertbg.webp"
+  },
+  "public/assets/siliconvalley/azblock.avif": {
+    "file": "assets/azblock-BTrPUJko.avif",
+    "src": "public/assets/siliconvalley/azblock.avif"
+  },
+  "public/assets/siliconvalley/azblock.webp": {
+    "file": "assets/azblock-D9xq-coM.webp",
+    "src": "public/assets/siliconvalley/azblock.webp"
+  },
+  "public/assets/siliconvalley/hireprocess.avif": {
+    "file": "assets/hireprocess-B9znzsKL.avif",
+    "src": "public/assets/siliconvalley/hireprocess.avif"
+  },
+  "public/assets/siliconvalley/hireprocess.webp": {
+    "file": "assets/hireprocess-DQan1VJf.webp",
+    "src": "public/assets/siliconvalley/hireprocess.webp"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DXyd9G7O.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1927" data-name="Rectangle 1927" width="39.935" height="39.935" transform="translate(220.564 762.33)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.324" y1="0.248" x2="1.649" y2="1.377" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a9fd4"/>
+      <stop offset="1" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.483" y1="1.955" x2="1.011" y2="1.297" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd43b"/>
+      <stop offset="1" stop-color="#ffe873"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b8b8b8" stop-opacity="0.498"/>
+      <stop offset="1" stop-color="#7f7f7f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_229760" data-name="Group 229760" transform="translate(-512.499 -1168.993)">
+    <rect id="holder" width="50" height="50" transform="translate(512.499 1168.993)" fill="#ff7d25" opacity="0"/>
+    <g id="python" transform="translate(296.6 411.328)" clip-path="url(#clip-path)">
+      <g id="Python-logo-notext" transform="translate(221.484 762.666)">
+        <path id="path1948" d="M18.757,0a26.149,26.149,0,0,0-4.376.373C10.506,1.055,9.8,2.494,9.8,5.134v3.49H18.96V9.787H6.363A5.718,5.718,0,0,0,.645,14.43a17.121,17.121,0,0,0,0,9.307c.651,2.711,2.205,4.643,4.867,4.643H8.66V24.2a5.819,5.819,0,0,1,5.721-5.689h9.147A4.613,4.613,0,0,0,28.1,13.854V5.134c0-2.482-2.092-4.346-4.577-4.76A28.56,28.56,0,0,0,18.757,0ZM13.8,2.807a1.742,1.742,0,1,1-1.718,1.751A1.742,1.742,0,0,1,13.8,2.807Z" transform="translate(0 0.001)" fill="url(#linear-gradient)"/>
+        <path id="path1950" d="M30.529,11.066v4.067a5.873,5.873,0,0,1-5.722,5.807H15.661a4.672,4.672,0,0,0-4.579,4.654v8.719c0,2.482,2.158,3.939,4.579,4.654a15.321,15.321,0,0,0,9.147,0c2.305-.667,4.579-2.011,4.579-4.654v-3.49H20.24V29.658H33.965c2.661,0,3.653-1.857,4.579-4.643.956-2.869.915-5.627,0-9.307-.658-2.651-1.914-4.643-4.579-4.643ZM25.384,33.148a1.728,1.728,0,1,1-1.221.515,1.742,1.742,0,0,1,1.221-.515Z" transform="translate(-1.28 -1.277)" fill="url(#linear-gradient-2)"/>
+        <ellipse id="path1894" cx="12.272" cy="2.379" rx="12.272" ry="2.379" transform="translate(6.792 41.236)" opacity="0.444" fill="url(#radial-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

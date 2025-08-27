@@ -1,0 +1,239 @@
+@import url(https://fonts.bunny.net/css?family=instrument-sans:400,400i,500,500i,600,600i);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Vast+Shadow&family=Zain:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap');
+
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-zinc-50: #fafafa;
+    --color-zinc-100: #f5f5f5;
+    --color-zinc-200: #e5e5e5;
+    --color-zinc-300: #d4d4d4;
+    --color-zinc-400: #a3a3a3;
+    --color-zinc-500: #737373;
+    --color-zinc-600: #525252;
+    --color-zinc-700: #404040;
+    --color-zinc-800: #262626;
+    --color-zinc-900: #171717;
+    --color-zinc-950: #0a0a0a;
+
+
+    --color-bacancy-primary: #2562EB;
+    --color-bacancy-lightblue: #2562EB40;
+
+    --color-sv-primary: #000046;
+    --color-sv-secondary: #1CB5E0;
+
+    --color-accent: var(--color-neutral-800);
+    --color-accent-content: var(--color-neutral-800);
+    --color-accent-foreground: var(--color-white);
+
+}
+
+@layer theme {
+    .dark {
+        --color-accent: var(--color-white);
+        --color-accent-content: var(--color-white);
+        --color-accent-foreground: var(--color-neutral-800);
+    }
+}
+
+:root {
+  --sv-gradient: linear-gradient(90deg, rgba(0, 0, 70, 1) 40%, rgba(28, 181, 224, 1) 100%);
+  --sv-gradient-topbutton: linear-gradient(180deg, rgba(0, 0, 70, 1) 20%, rgba(28, 181, 224, 1) 100%);
+  --sv-gradient-buttontop: linear-gradient(0deg, rgba(0, 0, 70, 1) 20%, rgba(28, 181, 224, 1) 100%);
+  --sv-gradient-reverse: linear-gradient(270deg,rgba(0, 0, 70, 1) 40%, rgba(28, 181, 224, 1) 100%);
+}
+
+
+@layer utilities {
+  .bg-sv-gradient {
+    background-image: var(--sv-gradient);
+  }
+  .bg-sv-gradient-topbottom {
+    background-image: var(--sv-gradient-topbutton);
+  }
+  .bg-sv-gradient-bottomtop {
+    background-image: var(--sv-gradient-buttontop);
+  }
+  .bg-sv-gradient-reverse {
+    background-image: var(--sv-gradient-reverse);
+  }
+}
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+    
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply  !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+/* \[:where(&)\]:size-4 {
+    @apply size-4;
+} */
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scaling_team {
+    background-image: url('/public/assets/bacancy/talktoexpertbg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.azblockbg{
+    background-image: image-set(
+      url('/public/assets/siliconvalley/azblock.avif') type('image/avif'),
+      url('/public/assets/siliconvalley/azblock.webp') type('image/webp')
+    );
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.vast-shadow-bold {
+  font-family: "Vast Shadow", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rampart-one-regular {
+  font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+}
+
+.fira-code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Firefox */
+.custom-scroll {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: #1CB5E0 #000046; /* thumb color, track color */
+  padding:10px 0px;
+}
+
+/* Chrome, Edge, Safari */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #000046;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #1CB5E0;
+  border-radius: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-slider {
+    animation: slideLeft 50s linear infinite;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.hiringline{
+  background-image: image-set(
+    url('/public/assets/siliconvalley/hireprocess.avif') type('image/avif'),
+    url('/public/assets/siliconvalley/hireprocess.webp') type('image/webp')
+  );
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(0);
+    animation: ripple-animation 600ms ease-out forwards;
+    pointer-events: none;
+    z-index: 9999;
+    overflow-x: hidden;
+  }
+
+  @keyframes ripple-animation {
+    to {
+      transform: scale(10);
+      opacity: 0;
+    }
+  }

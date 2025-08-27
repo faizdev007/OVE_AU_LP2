@@ -1,0 +1,791 @@
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+  2025-06-23 12:50:28 App\Jobs\SendQueryEmailJob ..................... RUNNING
+  2025-06-23 12:50:36 App\Jobs\SendQueryEmailJob ..................... 7s DONE
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+  2025-06-24 06:04:02 App\Jobs\SendQueryEmailJob ..................... RUNNING
+  2025-06-24 06:04:10 App\Jobs\SendQueryEmailJob ..................... 7s DONE
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+
+In Terminal.php line 131:
+                                                       
+  shell_exec(): Unable to execute 'stty 2> /dev/null'  
+                                                       
+
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: retry: No child processes
+sh: fork: Resource temporarily unavailable
