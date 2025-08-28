@@ -31,7 +31,7 @@ class SendQueryEmailJob implements ShouldQueue
                         'faizdev007@gmail.com', 
                         // 'ronnie@optimalvirtualemployee.com', 
                         // 'dshah@optimalvirtualemployee.com', 
-                        // 'nakul@optimalvirtualemployee.com', 
+                        'nakul@optimalvirtualemployee.com', 
                         // 'kartik@optimalvirtualemployee.com'
                     ];
 
