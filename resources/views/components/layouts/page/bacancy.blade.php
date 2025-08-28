@@ -38,7 +38,7 @@
             
                     <!-- <flux:sidebar.toggle class="lg:hidden border !text-white !bg-bacancy-primary" icon="bars-3" inset="left" /> -->
                     
-                    <flux:navbar class="-mb-px !md:gap-4 !gap-1">
+                    <flux:navbar class="-mb-px md:gap-4 gap-1">
                         <flux:modal.trigger name="book-a-call">
                             <button
                                 class="inline-flex gap-2 items-center cursor-pointer uppercase justify-center md:p-3 md:text-md text-xs p-2 font-medium text-black bg-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 2xl:text-[1.5rem] border-2 border-blue-600 text-nowrap hover:!text-white hover:!bg-[#1D4ED8] focus:!ring-[#1D4ED8]"
