@@ -102,17 +102,15 @@
                 @if ($step == 2)
                     <form wire:submit.prevent="verifyOtp" class="space-y-4">
                         <div>
-                            <label class="block text-sm font-medium mb-1" for="otp">Enter OTP</label>
+                            <label class="block text-sm font-medium mb-1" for="otp">Enter the OTP sent to your email</label>
                             <input type="text" id="otp" wire:model="otp"
                                    class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('otp') border-red-600 @enderror"
-                                   placeholder="@error('otp') {{ $message }} @else Enter the OTP sent to your email @enderror">
+                                   placeholder="@error('otp') {{ $message }} @else Enter OTP @enderror">
                         </div>
 
                         <div class="flex justify-between">
                             @if ($otpSent)
-                                <button type="button"
-                                        @if (!$resendCooldown) wire:click="resendOtp" disabled @endif
-                                        class='rounded-xl bg-yellow-400 px-4 py-2 text-white hover:bg-yellow-500'>
+                                <button type="button" wire:click="resendOtp" @if (!$resendCooldown) disabled class="text-gray-500" @else class="text-black hover:text-underline" @endif>
                                     Resend OTP
                                 </button>
                             @endif
@@ -134,6 +132,7 @@
 
     <script>
         (function(){
+            Livewire.emit('resetResendCooldown');
             setTimeout(() => {
                 Livewire.emit('resetResendCooldown');
             }, 60 * 1000);

@@ -119,6 +119,7 @@ class HireDeveloper extends Component
     // Method to resend OTP if needed
     public function resendOtp()
     {
+        dd($this->resendCooldown);
         if (!$this->resendCooldown) {
             $this->generateAndSendOtp(); // Resend OTP
             session()->flash('message', 'OTP resent successfully!');
