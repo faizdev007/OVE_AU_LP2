@@ -61,7 +61,7 @@
                         <div>
                             <label class="block text-sm font-medium mb-1" for="full_name">Full Name</label>
                             <input type="text" id="full_name" wire:model="full_name" 
-                                   class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('full_name') border-red-600 @enderror"
+                                   class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('full_name') border-red-600 @enderror"
                                    placeholder="Enter full name">
                             @error('full_name')
                                 <span class="text-red-500">{{ $message }}</span>
@@ -71,7 +71,7 @@
                         <div>
                             <label class="block text-sm font-medium mb-1" for="company_email">Company Email</label>
                             <input type="email" id="company_email" wire:model="company_email"
-                                   class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('company_email') border-red-600 @enderror"
+                                   class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('company_email') border-red-600 @enderror"
                                    placeholder="Enter email">
                             @error('company_email')
                                 <p class="text-red-500">{{ $message }}</p>
@@ -82,7 +82,7 @@
                         <div>
                             <label class="block text-sm font-medium mb-1" for="phone">Phone</label>
                             <input type="text" id="phone" wire:model="phone"
-                                   class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('phone') border-red-600 @enderror"
+                                   class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('phone') border-red-600 @enderror"
                                    placeholder="Enter phone number">
                             @error('phone')
                                 <span class="text-red-500">{{ $message }}</span>
@@ -104,7 +104,7 @@
                         <div>
                             <label class="block text-sm font-medium mb-1" for="otp">Enter OTP</label>
                             <input type="text" id="otp" wire:model="otp"
-                                   class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('otp') border-red-600 @enderror"
+                                   class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('otp') border-red-600 @enderror"
                                    placeholder="@error('otp') {{ $message }} @else Enter the OTP sent to your email @enderror">
                         </div>
 

@@ -76,7 +76,7 @@
             {{ $slot }}
         </flux:main>
         
-        <flux:modal name="book-a-call" :show="$errors->isNotEmpty()" focusable class="max-w-6xl overflow-hidden !bg-gray-100 !p-0">
+        <flux:modal name="book-a-call" :show="$errors->isNotEmpty()" focusable class="max-w-6xl overflow-hidden !bg-gray-200 !p-0">
             <livewire:modal.hire-developer/>
         </flux:modal>
 

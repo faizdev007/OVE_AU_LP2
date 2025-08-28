@@ -108,6 +108,8 @@ class HireDeveloper extends Component
                 'ip_address'=>$request->ip(),
             ])->first();
 
+            $query->update(['project_brief'=>'verified']);
+
             $this->submitForm($query);
         } else {
             session()->flash('error', 'Invalid OTP. Please try again.');
@@ -131,11 +133,8 @@ class HireDeveloper extends Component
         // Dispatch email job
         SendQueryEmailJob::dispatch($query);
 
-        $this->reset(['name', 'email', 'phone', 'project_brief']);
-        
         session()->flash('allow_success', true);
         
-        // $this->successMessage = 'Thank You!';
         return redirect()->route('thankyou');
     }
 
