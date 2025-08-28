@@ -43,7 +43,7 @@
                             <button
                                 class="inline-flex gap-2 items-center cursor-pointer uppercase justify-center md:p-3 md:text-md text-xs p-2 font-medium text-black bg-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 2xl:text-[1.5rem] border-2 border-blue-600 text-nowrap hover:!text-white hover:!bg-[#1D4ED8] focus:!ring-[#1D4ED8]"
                                 >
-                                <span>
+                                <span class="font-bold">
                                     Sign Up
                                 </span>
                                 <svg id="arrowsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6 md:block hidden">
@@ -61,8 +61,8 @@
                                 <path fill-rule="evenodd" d="M18 2.993a.75.75 0 0 0-1.5 0v1.5h-9V2.994a.75.75 0 1 0-1.5 0v1.497h-.752a3 3 0 0 0-3 3v11.252a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3V7.492a3 3 0 0 0-3-3H18V2.993ZM3.748 18.743v-7.5a1.5 1.5 0 0 1 1.5-1.5h13.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-13.5a1.5 1.5 0 0 1-1.5-1.5Z" clip-rule="evenodd" />
                                 </svg>
             
-                                <span class="flex text-nowrap">
-                                    <span class="md:block hidden">schedule</span> <span class="md:hidden block">Book</span> a call
+                                <span class="flex text-nowrap gap-1 font-bold">
+                                    <span class="md:block hidden">schedule </span> <span class="md:hidden block">Book </span> <span> a call </span>
                                 </span>
                                 <svg id="arrowsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6 md:block hidden">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h4.59l-2.1 1.95a.75.75 0 0 0 1.02 1.1l3.5-3.25a.75.75 0 0 0 0-1.1l-3.5-3.25a.75.75 0 1 0-1.02 1.1l2.1 1.95H6.75Z" clip-rule="evenodd" />

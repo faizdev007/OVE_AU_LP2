@@ -116,7 +116,7 @@
                                         Resend OTP ({{ $secondsRemaining }}s)
                                     </button>
                                 @else
-                                    <button wire:click="resendOtp" aria-label="resentotpactive">Resend OTP</button>
+                                    <button wire:click="resendOtp" aria-label="resentotpactive" class="underline text-blue-800 cursor-pointer">Resend OTP</button>
                                 @endif
                             @endif
                         </div>
@@ -143,7 +143,7 @@
             if (otpElement) {
                 console.log("OTP section loaded ✅");
                 startOtpCountdown();
-                observer.disconnect(); // stop watching once found
+                // observer.disconnect(); // stop watching once found
             }
         });
 
@@ -164,18 +164,18 @@
                 clearInterval(countdown);
                 Livewire.dispatch('resetResendCooldown');
             }
+
         }, 1000);
-    }
 
+        // Attach button click immediately when countdown starts
+        const button = document.querySelector('[aria-label="resentotpactive"]');
 
-    // Attach button click immediately when countdown starts
-    const button = document.querySelector('[aria-label="resentotpactive"]');
-
-    if (button) {
-        button.addEventListener("click", () => {
-            console.log("Resend OTP clicked 🔄");
-            clearInterval(countdown); // stop old countdown
-            startOtpCountdown();      // restart countdown
-        }); // ensure listener runs once per click
+        if (button) {
+            button.addEventListener("click", () => {
+                console.log("Resend OTP clicked 🔄");
+                clearInterval(countdown); // stop old countdown
+                startOtpCountdown();      // restart countdown
+            }); // ensure listener runs once per click
+        }
     }
 </script>
