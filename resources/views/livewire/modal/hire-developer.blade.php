@@ -62,7 +62,7 @@
                             <label class="block text-sm font-medium mb-1" for="full_name">Full Name</label>
                             <input type="text" id="full_name" wire:model="full_name" 
                                    class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('full_name') border-red-600 @enderror"
-                                   placeholder="Enter full name">
+                                   placeholder="Enter Your Full Name">
                             @error('full_name')
                                 <span class="text-red-500">{{ $message }}</span>
                             @enderror
@@ -72,18 +72,18 @@
                             <label class="block text-sm font-medium mb-1" for="company_email">Company Email</label>
                             <input type="email" id="company_email" wire:model="company_email"
                                    class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('company_email') border-red-600 @enderror"
-                                   placeholder="Enter email">
+                                   placeholder="Enter Your Work Email">
                             @error('company_email')
                                 <p class="text-red-500">{{ $message }}</p>
                             @enderror
-                            <small class="text-gray-500">— no Gmail/Yahoo/Hotmail allowed</small>
+                            <small class="text-gray-500 hidden">— no Gmail/Yahoo/Hotmail allowed</small>
                         </div>
 
                         <div>
                             <label class="block text-sm font-medium mb-1" for="phone">Phone</label>
                             <input type="text" id="phone" wire:model="phone"
                                    class="w-full rounded-md border px-3 py-3 focus:outline-none focus:ring-2 bg-white focus:ring-blue-700 @error('phone') border-red-600 @enderror"
-                                   placeholder="Enter phone number">
+                                   placeholder="Enter Your Phone Number">
                             @error('phone')
                                 <span class="text-red-500">{{ $message }}</span>
                             @enderror
@@ -94,7 +94,7 @@
                             title="Next"
                             target="nextStep"
                             otp-triger="true"
-                            class="w-full !md:text-2xl hover:!bg-gray-900 hover:!text-white focus:!ring-[#000000]"
+                            class="w-full !md:text-2xl text-lg hover:!bg-gray-900 !font-bold hover:!text-white focus:!ring-[#000000]"
                         />
                     </form>
                 @endif

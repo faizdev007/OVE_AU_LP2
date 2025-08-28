@@ -159,8 +159,8 @@ class HireDeveloper extends Component
             'No Upfront Cost',
             'Trusted by Startups & Fortune 500 Companies',
         ];
-        $this->formtitle = $this->modalData['formtitle'] ?? 'Talk to our experts';
-        $this->formsubtitle =  $this->modalData['formsubtitle'] ?? 'Kickstart Your Digital Journey Today';
+        $this->formtitle = $this->modalData['formtitle'] ?? 'Kickstart Your Journey';
+        $this->formsubtitle =  $this->modalData['formsubtitle'] ?? 'Fill in your details to move forward.';
         $this->stacktitle =  $this->modalData['stacktitle'] ?? 'You are in good company -';
         $this->stack =  $this->modalData['stack'] ?? [
             ['title' => 'ESTD', 'description' => '2006'],
