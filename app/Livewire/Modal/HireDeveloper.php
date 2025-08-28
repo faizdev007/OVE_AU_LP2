@@ -10,22 +10,18 @@ use App\Models\ModalData;
 use App\Models\RequestQuery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 
 
 class HireDeveloper extends Component
 {
-    public function resetResendCooldown()
-    {
-        $this->resendCooldown = false;
-    }
 
     public $step = 1;
-    public $full_name, $company_email, $phone, $otp, $generated_otp;
+    public $full_name, $company_email, $phone, $otp, $generated_otp, $cooldown, $secondsRemaining;
     public $modalData=null,$lp_name,$title,$lists=[],$stacktitle,$formtitle,$formsubtitle;
     public $image,$old_path;
     public $otpSent = false; // Flag to track OTP sent status
-    public $resendCooldown = false; // Flag to track resend cooldown
     public $stack = [
         ['title' => '', 'description' => '']
     ];
@@ -84,11 +80,24 @@ class HireDeveloper extends Component
         
         // Set OTP sent flag
         $this->otpSent = true;
-        $this->resendCooldown = true; // Activate resend cooldown for 60 seconds
-
+        
         // Reset resend cooldown flag after 60 seconds
-        // session('start-resend-cooldown',['time' => 60]);
-        // $this->dispatchBrowserEvent('start-resend-cooldown', ['time' => 60]);
+        $this->cooldown = true;
+        $this->secondsRemaining = 60; // or however long you want
+        $this->dispatch('startResendCooldown');
+    }
+
+    #[\Livewire\Attributes\On('resetResendCooldown')]
+    public function resetResendCooldown()
+    {
+        $this->cooldown = false;
+        $this->secondsRemaining = 0;
+    }
+
+    #[\Livewire\Attributes\On('updateCooldownTimer')]
+    public function updateCooldownTimer($seconds)
+    {
+        $this->secondsRemaining = $seconds;
     }
 
     // Method to verify OTP in second step
@@ -119,8 +128,7 @@ class HireDeveloper extends Component
     // Method to resend OTP if needed
     public function resendOtp()
     {
-        dd($this->resendCooldown);
-        if (!$this->resendCooldown) {
+        if (!$this->cooldown) {
             $this->generateAndSendOtp(); // Resend OTP
             session()->flash('message', 'OTP resent successfully!');
         } else {
@@ -162,10 +170,5 @@ class HireDeveloper extends Component
         ];
         $this->old_path = $this->modalData['image'] ?? '/assets/ratingimg.webp';
     }
-
-    // protected function dispatchBrowserEvent(string $var, array $timer)
-    // {
-    //     dd($var,$timer);
-    // }
 }
 

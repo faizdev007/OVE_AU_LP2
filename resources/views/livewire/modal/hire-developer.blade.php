@@ -93,6 +93,7 @@
                             type="submit" 
                             title="Next"
                             target="nextStep"
+                            otp-triger="true"
                             class="w-full !md:text-2xl hover:!bg-gray-900 hover:!text-white focus:!ring-[#000000]"
                         />
                     </form>
@@ -100,7 +101,7 @@
 
                 {{-- STEP 2 --}}
                 @if ($step == 2)
-                    <form wire:submit.prevent="verifyOtp" class="space-y-4">
+                    <form wire:submit.prevent="verifyOtp" aria-label="otpcount" class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium mb-1" for="otp">Enter the OTP sent to your email</label>
                             <input type="text" id="otp" wire:model="otp"
@@ -108,11 +109,15 @@
                                    placeholder="@error('otp') {{ $message }} @else Enter OTP @enderror">
                         </div>
 
-                        <div class="flex justify-between">
+                        <div>
                             @if ($otpSent)
-                                <button type="button" wire:click="resendOtp" @if (!$resendCooldown) disabled class="text-gray-500" @else class="text-black hover:text-underline" @endif>
-                                    Resend OTP
-                                </button>
+                                @if ($cooldown)
+                                    <button disabled>
+                                        Resend OTP ({{ $secondsRemaining }}s)
+                                    </button>
+                                @else
+                                    <button wire:click="resendOtp" aria-label="resentotpactive">Resend OTP</button>
+                                @endif
                             @endif
                         </div>
 
@@ -129,13 +134,48 @@
             </div>
         </div>
     </div>
-
-    <script>
-        (function(){
-            Livewire.emit('resetResendCooldown');
-            setTimeout(() => {
-                Livewire.emit('resetResendCooldown');
-            }, 60 * 1000);
-        })
-    </script>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new MutationObserver(() => {
+            const otpElement = document.querySelector('[aria-label="otpcount"]');
+            if (otpElement) {
+                console.log("OTP section loaded ✅");
+                startOtpCountdown();
+                observer.disconnect(); // stop watching once found
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+
+    function startOtpCountdown() {
+        let seconds = 60;
+        const countdown = setInterval(() => {
+            seconds--;
+            
+            Livewire.dispatch('updateCooldownTimer', { seconds });
+
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                Livewire.dispatch('resetResendCooldown');
+            }
+        }, 1000);
+    }
+
+
+    // Attach button click immediately when countdown starts
+    const button = document.querySelector('[aria-label="resentotpactive"]');
+
+    if (button) {
+        button.addEventListener("click", () => {
+            console.log("Resend OTP clicked 🔄");
+            clearInterval(countdown); // stop old countdown
+            startOtpCountdown();      // restart countdown
+        }); // ensure listener runs once per click
+    }
+</script>
