@@ -1,7 +1,7 @@
 <div>
     <div class="md:flex md:p-0 py-4 items-center justify-between">
         <!-- Left info panel -->
-        <div class="flex-1 w-full aspect-[1/1] relative md:block hidden">
+        <div class="flex-1 w-full lg:aspect-[1/1] md:aspect-[1.3/2] relative md:block hidden">
             <img loading="eager" fetchpriority="high" decoding="async" src="{{ asset('assets/modalpic2.webp') }}" alt="book_a_30_mins_strategy_call" height="500px" width="500px" class="w-full h-full object-cover" />
             <div class="bg-black/50 h-full w-full absolute top-0 bottom-0 start-0 end-0 z-10"></div>
             <div class="absolute top-0 bottom-0 start-0 end-0 z-20 flex flex-col justify-around h-full gap-2 p-4 text-white">
@@ -148,9 +148,22 @@
         });
 
         observer.observe(document.body, {
+            attributes:true,
             childList: true,
             subtree: true
         });
+
+        const button = document.querySelector('[aria-label="resentotpactive"]');
+        
+        if(button !== undefined){
+            if (button) {
+                button.addEventListener("click", () => {
+                    console.log("Resend OTP clicked 🔄");
+                    clearInterval(countdown); // stop old countdown
+                    startOtpCountdown();      // restart countdown
+                }); // ensure listener runs once per click
+            }
+        }
     });
 
     function startOtpCountdown() {
@@ -166,16 +179,5 @@
             }
 
         }, 1000);
-
-        // Attach button click immediately when countdown starts
-        const button = document.querySelector('[aria-label="resentotpactive"]');
-
-        if (button) {
-            button.addEventListener("click", () => {
-                console.log("Resend OTP clicked 🔄");
-                clearInterval(countdown); // stop old countdown
-                startOtpCountdown();      // restart countdown
-            }); // ensure listener runs once per click
-        }
     }
 </script>

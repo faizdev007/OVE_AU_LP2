@@ -4,16 +4,19 @@
 <meta name="title" content="{{$seo['metaTitle']}}">
 <meta name="description" content="{{$seo['metaDescription']}}">
 
+<!-- Noindex and Nofollow -->
+<meta name="robots" content="noindex, nofollow">
+
 <title>{{ $title ?? config('app.name') }}</title>
 
 <link rel="icon" href="{{asset('/favicon.ico')}}" sizes="any">
 <link rel="icon" href="{{asset('/favicon.svg')}}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{asset('/favicon.svg')}}">
 
-{{-- vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance
-<link rel="stylesheet" href="{{ asset('build/assets/app-BAllGjaG.css') }}">
-<script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}" defer></script>
+{{-- <link rel="stylesheet" href="{{ asset('build/assets/app-BAllGjaG.css') }}">
+<script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}" defer></script> --}}
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -22,3 +25,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5K42N2M2');</script>
 <!-- End Google Tag Manager -->
+

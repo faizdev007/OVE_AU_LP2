@@ -78,10 +78,10 @@
             {{ $slot }}
         </flux:main>
         
-        <flux:modal name="book-a-call" :show="$errors->isNotEmpty()" focusable class="max-w-6xl overflow-hidden !bg-gray-200 !p-0">
+        <flux:modal name="book-a-call" :show="$errors->isNotEmpty()" focusable class="md:max-w-6xl max-w-8xl overflow-hidden !bg-gray-200 !p-0">
             <livewire:modal.hire-developer/>
         </flux:modal>
-
+        
         <script>
             (function() {
                 const elem = document.getElementById('responsive-text');

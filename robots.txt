@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /ove/login
-Disallow: /thank-you/
-Allow: /
+Disallow: /
